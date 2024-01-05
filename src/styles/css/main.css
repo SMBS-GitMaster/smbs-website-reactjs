@@ -9303,10 +9303,67 @@ ul {
 a {
   text-decoration: none; }
 
+hr {
+  border: 0;
+  border-top: 0;
+  color: inherit;
+  margin: none;
+  opacity: 1; }
+
 p {
   margin: 0; }
 
 h1, .h1, h2, .h2, h3, .h3 {
   margin: 0; }
+
+.navbar {
+  padding: 21px 0; }
+  .navbar__wrapper {
+    align-items: center;
+    display: flex;
+    gap: 56px;
+    justify-content: center; }
+  .navbar__links {
+    color: #00071e;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    line-height: 24px;
+    text-transform: uppercase; }
+  @media (max-width: 991.98px) {
+    .navbar__wrapper {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.7s ease 0s;
+      width: 100%; }
+      .navbar__wrapper--open {
+        display: flex;
+        height: 100%; } }
+
+.button {
+  background: #f89b27;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 24px;
+  padding: 12px 54px;
+  text-transform: uppercase; }
+  .button--toggle {
+    background: none;
+    color: #00071e;
+    display: none;
+    font-size: 20px;
+    padding: 5px; }
+  @media (max-width: 991.98px) {
+    .button--toggle {
+      display: flex; } }
 
 /*# sourceMappingURL=main.css.map */

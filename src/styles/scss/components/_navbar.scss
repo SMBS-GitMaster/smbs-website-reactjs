@@ -1,0 +1,36 @@
+.navbar {
+    padding: 21px 0;
+    &__wrapper {
+        align-items: center;
+        display: flex;
+        gap: 56px;
+        justify-content: center;
+    }
+
+    &__links {
+        color: $black;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1.4px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &__wrapper {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.7s ease 0s;
+            width: 100%;
+
+            &--open {
+                display: flex;
+                height: 100%;
+            }
+        }
+    }
+}

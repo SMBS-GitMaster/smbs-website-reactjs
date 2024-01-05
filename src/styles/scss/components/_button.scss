@@ -1,0 +1,27 @@
+.button {
+    background: $dark-orange;
+    border: none;
+    border-radius: 10px;
+    color: $white;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: 24px;
+    padding: 12px 54px;
+    text-transform: uppercase;
+
+    &--toggle {
+        background: none;
+        color: $black;
+        display: none;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        &--toggle {
+            display: flex;
+        }
+    }
+}
