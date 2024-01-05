@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button";
-import { FaBars, FaWindowClose } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import { options, routes } from "@/constants/routes";
 
@@ -10,29 +10,37 @@ const Header = () => {
 
   const renderMenu = () =>
     options.map((option) => (
-      <Link key={option.id} className="navbar__links" href={option.url}>
-        {option.text}
-      </Link>
+      <li key={option.id}>
+        <Link className="navbar__link" href={option.url}>
+          {option.text}
+        </Link>
+      </li>
     ));
 
   return (
     <header className="navbar">
       <div className="container">
         <Link href={routes.home}>
-          <Image src="/page_logo.png" width={208} height={51} alt="smbs logo" />
+          <Image
+            className="navbar__logo"
+            src="/smbs-logo.png"
+            width={208}
+            height={51}
+            alt="smbs logo"
+          />
         </Link>
         <Button
           customClass="button button--toggle"
           onClick={() => setIsShowNav(() => !isShowNav)}
         >
-          {isShowNav ? <FaWindowClose /> : <FaBars />}
+          <FaBars />
         </Button>
-        <nav
-          className={`navbar__wrapper ${isShowNav && "navbar__wrapper--open"}`}
-        >
-          {renderMenu()}
-          <Button customClass="button" buttonText="Texto" />
-        </nav>
+        <div className="navbar__container">
+          <nav className={`navbar__menu ${isShowNav && "navbar__menu--open"}`}>
+            <ul className="navbar__links">{renderMenu()}</ul>
+          </nav>
+          <Button customClass="button button--navbar" buttonText="Texto" />
+        </div>
       </div>
     </header>
   );

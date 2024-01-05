@@ -20,6 +20,17 @@
     }
 
     @include media-breakpoint-down(lg) {
+        &--navbar {
+            font-size: 14px;
+            padding: 6px 27px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        &--navbar {
+            display: none;
+        }
+
         &--toggle {
             display: flex;
         }
