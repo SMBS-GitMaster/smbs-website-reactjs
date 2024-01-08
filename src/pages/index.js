@@ -1,11 +1,10 @@
-import HeadPage from "@/components/HeadPage";
 import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 
 export default function HomePage() {
   return (
-    <>
-      <HeadPage title="SMBS | Home" />
+    <Layout>
       <Header />
-    </>
+    </Layout>
   );
 }

@@ -1,38 +1,30 @@
 .navbar {
-    padding: 21px 0;
-
-    &__container {
-        align-items: center;
-        display: flex;
-    }
+    margin-right: 56px;
 
     &__menu {
-        margin-right: 56px;
-    }
-
-    &__links {
         align-items: center;
         display: flex;
         gap: 56px;
         justify-content: center;
+        list-style: none;
+        margin: 0;
     }
 
     &__link {
-        color: $black;
-        font-family: "Open Sans";
+        color: $text-dark;
+        font-family: $font-primary;
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 1.4px;
         line-height: 24px;
+        text-decoration: none;
         text-transform: uppercase;
     }
 
     @include media-breakpoint-down(xl) {
-        &__menu {
-            margin-right: 28px;
-        }
+        margin-right: 28px;
 
-        &__links {
+        &__menu {
             gap: 28px;
         }
 
@@ -41,34 +33,21 @@
         }
     }
 
-    @include media-breakpoint-down(lg) {
-        &__logo {
-            height: auto;
-            width: 152px;
-        }
-    }
-
     @include media-breakpoint-down(md) {
-        &__container {
-            width: 100%;
+        display: none;
+        height: 0;
+        margin: 0;
+        overflow: hidden;
+        padding-top: 20px;
+        transition: all 0.4s ease 0s;
+        width: 100%;
+
+        &--open {
+            display: flex;
+            height: 100%;
         }
 
         &__menu {
-            display: none;
-            height: 0;
-            margin: 0;
-            overflow: hidden;
-            padding-top: 20px;
-            transition: all 0.4s ease 0s;
-            width: 100%;
-
-            &--open {
-                display: flex;
-                height: 100%;
-            }
-        }
-
-        &__links {
             flex-direction: column;
             gap: 10px;
             width: 100%;

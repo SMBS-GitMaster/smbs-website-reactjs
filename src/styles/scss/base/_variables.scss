@@ -1,5 +1,26 @@
-$dark-orange: #f89b27;
+//fonts
+$font-primary: "Open Sans", sans-serif;
+
+//colors
 $white: #ffffff;
+$blue: #1c243e;
+$dark-blue: #050d26;
+$gray: #3d455c;
+$light-gray: #f5f5f5;
+$dark-gray: #212529;
 $black: #00071e;
-$dark-gray: #afafaf;
-$dark-slate-gray: #3d455c;
+$orange: #f89b27;
+
+//text-colors
+
+$text-primary: $dark-gray;
+$text-secondary: $orange;
+$text-light: $white;
+$text-dark: $black;
+
+//background-colors
+
+$bg-primary: $blue;
+$bg-primary-subtle: $gray;
+$bg-secondary: $orange;
+$bg-light: $light-gray;

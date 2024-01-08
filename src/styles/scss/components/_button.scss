@@ -1,19 +1,18 @@
 .button {
-    background: $dark-orange;
+    background: $bg-secondary;
     border: none;
     border-radius: 10px;
-    color: $white;
-    font-family: "Open Sans";
+    color: $text-light;
+    font-family: $font-primary;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     line-height: 24px;
     padding: 12px 54px;
-    text-transform: uppercase;
 
     &--toggle {
         background: none;
-        color: $black;
+        color: $text-dark;
         display: none;
         font-size: 20px;
         padding: 5px;
@@ -21,7 +20,6 @@
 
     @include media-breakpoint-down(lg) {
         &--navbar {
-            font-size: 14px;
             padding: 6px 27px;
         }
     }

@@ -18,11 +18,11 @@ const Header = () => {
     ));
 
   return (
-    <header className="navbar">
-      <div className="container">
+    <header className="header">
+      <div className="container d-flex justify-content-between flex-wrap">
         <Link href={routes.home}>
           <Image
-            className="navbar__logo"
+            className="header__logo"
             src="/smbs-logo.png"
             width={208}
             height={51}
@@ -35,9 +35,9 @@ const Header = () => {
         >
           <FaBars />
         </Button>
-        <div className="navbar__container">
-          <nav className={`navbar__menu ${isShowNav && "navbar__menu--open"}`}>
-            <ul className="navbar__links">{renderMenu()}</ul>
+        <div className="header__nav">
+          <nav className={`navbar ${isShowNav && "navbar--open"}`}>
+            <ul className="navbar__menu">{renderMenu()}</ul>
           </nav>
           <Button customClass="button button--navbar" buttonText="Texto" />
         </div>
