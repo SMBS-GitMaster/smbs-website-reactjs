@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Header from "../Header";
 
 const Layout = (props) => {
   const { children, description = "SMBS website" } = props;
@@ -18,7 +19,8 @@ const Layout = (props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.webp" />
       </Head>
-      <>{children}</>
+      <Header />
+      {children}
     </>
   );
 };
