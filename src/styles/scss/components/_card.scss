@@ -1,0 +1,39 @@
+.card {
+    padding: 40px 50px;
+    &--stack {
+        background: $bg-conic-gradient;
+        box-shadow: $box-shadow;
+        padding: 30px 24px;
+        width: 368px;
+        &__content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            height: 100%;
+        }
+
+        &__title {
+            color: $gainsboro;
+        }
+
+        &__subtitle {
+            color: $text-light;
+            text-align: center;
+        }
+
+        &__skills {
+            color: $text-light;
+        }
+
+        &__text {
+            border-bottom: 2px solid $bg-primary-subtle;
+            color: $text-light;
+            color: $white;
+            font-size: 14px;
+            line-height: 18px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
+}

@@ -4,10 +4,14 @@ $font-primary: "Open Sans", sans-serif;
 //colors
 $white: #ffffff;
 $blue: #1c243e;
+$dark-shade: rgba(0, 0, 0, 0.25);
 $dark-blue: #050d26;
+$midnight-blue: #192139;
+$dark-slate-blue: rgba(25, 33, 57, 0);
 $gray: #3d455c;
 $light-gray: #f5f5f5;
 $dark-gray: #212529;
+$gainsboro: #afafaf;
 $black: #00071e;
 $orange: #f89b27;
 
@@ -24,3 +28,8 @@ $bg-primary: $blue;
 $bg-primary-subtle: $gray;
 $bg-secondary: $orange;
 $bg-light: $light-gray;
+$bg-liner-gradient: linear-gradient(76deg, $black 60.21%, $blue 74.25%);
+$bg-conic-gradient: conic-gradient(from 45deg at 50% 50%, $midnight-blue 0deg, $dark-slate-blue 360deg);
+
+//shadow
+$box-shadow: 4px 3px 10px 0px $dark-shade;

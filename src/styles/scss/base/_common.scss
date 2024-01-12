@@ -1,0 +1,29 @@
+.title {
+    color: $text-secondary;
+    font-family: $font-primary;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    &--primary {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    &--secondary {
+        color: $text-dark;
+        font-size: 30px;
+    }
+}
+
+.text {
+    color: $text-dark;
+    font-family: $font-primary;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    &--secondary {
+        font-size: 16px;
+    }
+}
