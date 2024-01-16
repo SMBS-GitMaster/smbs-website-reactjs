@@ -9697,26 +9697,30 @@ progress {
 .button {
   background: #f89b27;
   border: none;
-  border-radius: 10px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   line-height: 24px;
-  padding: 12px 54px; }
+  padding: 12px 20px; }
   .button--toggle {
     background: none;
     color: #00071e;
     display: none;
     font-size: 20px;
     padding: 5px; }
+  .button--light {
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: normal;
+    padding: 8px 26px; }
   @media (max-width: 991.98px) {
     .button--navbar {
-      padding: 6px 27px; } }
+      display: none; } }
   @media (max-width: 767.98px) {
-    .button--navbar {
-      display: none; }
     .button--toggle {
       display: flex; } }
 
@@ -9756,10 +9760,13 @@ progress {
     display: flex;
     justify-content: space-between;
     padding: 70px 79px 70px 0; }
+    .hero__content__button {
+      font-size: 25px;
+      line-height: 34px;
+      margin-right: 120px; }
     .hero__content__bottom {
       align-items: center;
-      display: flex;
-      gap: 70px; }
+      display: flex; }
   .hero__description {
     align-items: flex-start;
     display: flex;
@@ -9783,6 +9790,10 @@ progress {
       text-align: justify; }
     .hero__stack {
       display: none; }
+    .hero__content__button {
+      font-size: 25px;
+      line-height: 34px;
+      margin-right: 0; }
     .hero__content__bottom {
       flex-direction: column-reverse;
       gap: 35px;

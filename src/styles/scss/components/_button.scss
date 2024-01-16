@@ -1,14 +1,13 @@
 .button {
     background: $bg-secondary;
     border: none;
-    border-radius: 10px;
     color: $text-light;
     font-family: $font-primary;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     line-height: 24px;
-    padding: 12px 54px;
+    padding: 12px 20px;
 
     &--toggle {
         background: none;
@@ -18,17 +17,22 @@
         padding: 5px;
     }
 
+    &--light {
+        background: none;
+        border: 1px solid $white;
+        border-radius: 10px;
+        font-size: 15px;
+        line-height: normal;
+        padding: 8px 26px;
+    }
+
     @include media-breakpoint-down(lg) {
         &--navbar {
-            padding: 6px 27px;
+            display: none;
         }
     }
 
     @include media-breakpoint-down(md) {
-        &--navbar {
-            display: none;
-        }
-
         &--toggle {
             display: flex;
         }

@@ -39,7 +39,10 @@ const Header = () => {
           <nav className={`navbar ${isShowNav && "navbar--open"}`}>
             <ul className="navbar__menu">{renderMenu()}</ul>
           </nav>
-          <Button customClass="button button--navbar" buttonText="Texto" />
+          <Button
+            customClass="button button--navbar"
+            buttonText="SCHEDULE A CALL"
+          />
         </div>
       </div>
     </header>

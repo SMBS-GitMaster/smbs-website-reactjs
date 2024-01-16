@@ -38,7 +38,10 @@ const HomeHero = () => {
           works best for your needs.
         </p>
         <div className="hero__content__bottom">
-          <Button customClass="button " buttonText="Get in Touch" />
+          <Button
+            customClass="button hero__content__button"
+            buttonText="Get in Touch"
+          />
           <Image
             src="/image_2.png"
             width={150}
