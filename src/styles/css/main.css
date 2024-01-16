@@ -9639,6 +9639,11 @@ progress {
   .text--secondary {
     font-size: 16px; }
 
+.clients {
+  margin-bottom: 100px; }
+  .clients__image {
+    margin-right: 55px; }
+
 .header {
   padding: 21px 0; }
   .header__nav {
@@ -9755,7 +9760,7 @@ progress {
 
 .hero {
   background: linear-gradient(76deg, #00071e 60.21%, #1c243e 74.25%);
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
   .hero__content {
     display: flex;
     justify-content: space-between;
