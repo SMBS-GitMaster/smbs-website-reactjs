@@ -17,6 +17,8 @@ const Header = () => {
       </li>
     ));
 
+  const handleShowMenu = () => setIsShowNav(() => !isShowNav);
+
   return (
     <header className="header">
       <div className="container d-flex justify-content-between flex-wrap">
@@ -29,10 +31,7 @@ const Header = () => {
             alt="smbs logo"
           />
         </Link>
-        <Button
-          customClass="button button--toggle"
-          onClick={() => setIsShowNav(() => !isShowNav)}
-        >
+        <Button customClass="button button--toggle" onClick={handleShowMenu}>
           <FaBars />
         </Button>
         <div className="header__nav">
