@@ -8,7 +8,6 @@ const HomeHero = () => {
     heroCards.map((heroCard) => (
       <CardStack
         key={heroCard.id}
-        customClass="card--stack"
         image={heroCard.image}
         width={120}
         height={120}
