@@ -3,26 +3,26 @@ import Button from "../Button";
 import PropTypes from "prop-types";
 
 const CardStack = (props) => {
-  const { customClass, image, width, height, alt, name, charge, text, skills } =
+  const { image, width, height, alt, name, charge, text, skills } =
     props;
 
   return (
-    <article className={`card ${customClass}`}>
-      <div className={`${customClass}__content`}>
+    <article className="card card--stack">
+      <div className="card--stack__content">
         <Image src={image} width={width} height={height} alt={alt} />
         <div className="d-flex flex-column align-items-center">
-          <span className={`text ${customClass}__title`}>{name}</span>
-          <span className={`text text--secondary ${customClass}__subtitle`}>
+          <span className="text card--stack__title">{name}</span>
+          <span className="text text--secondary card--stack__subtitle">
             {charge}
           </span>
         </div>
-        <p className={`text ${customClass}__text`}>{text}</p>
+        <p className="text card--stack__text">{text}</p>
         <Button customClass="button button--light" buttonText="Engage" />
         <div className="w-100 d-flex flex-column align-items-start gap-3">
-          <span className={`text text--secondary ${customClass}__skills`}>
+          <span className="text text--secondary card--stack__skills">
             SKILLS:
           </span>
-          <span className={`text text--secondary ${customClass}__skills`}>
+          <span className="text text--secondary card--stack__skills">
             {skills}
           </span>
         </div>
@@ -32,7 +32,6 @@ const CardStack = (props) => {
 };
 
 CardStack.propTypes = {
-  customClass: PropTypes.string,
   image: PropTypes.string.isRequired,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
