@@ -3,8 +3,7 @@ import Button from "../Button";
 import PropTypes from "prop-types";
 
 const CardStack = (props) => {
-  const { image, width, height, alt, name, charge, text, skills } =
-    props;
+  const { image, width, height, alt, name, charge, text, skills } = props;
 
   return (
     <article className="card card--stack">

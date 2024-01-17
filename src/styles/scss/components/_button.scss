@@ -26,6 +26,14 @@
         padding: 8px 26px;
     }
 
+    &--dark {
+        background: $bg-primary;
+        font-size: 20px;
+        letter-spacing: normal;
+        line-height: 30px;
+        padding: 12px 54px;
+    }
+
     @include media-breakpoint-down(lg) {
         &--navbar {
             display: none;
